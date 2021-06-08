@@ -15,11 +15,11 @@ Generates a matrix of random numbers between specified lower and upper bounds.
 
 `X = rand2(a,b)` returns one random double-precision floating-point number `X` between `a` and `b`.
 
-`X = rand2(a,b,[],typename)` returns one random number `X` of data type `type` between `a` and `b`. Options for `type` are `'int'` (integers), `'single'` (single-precision floating point numbers), or `'double'` (double-precision floating point numbers).
+`X = rand2(a,b,[],type)` returns one random number `X` of data type `type` between `a` and `b`. Options for `type` are `'int'` (integers), `'single'` (single-precision floating point numbers), or `'double'` (double-precision floating point numbers).
 
 `X = rand2(a,b,[m,n])` returns an `m`-by-`n` matrix `X` of random double-precision floating-point numbers between `a` and `b`
 
-`X = rand2(a,b,[m,n],typename)` returns an `m`-by-`n` matrix `X` of random numbers of data type `type`. Options for `type` are `'int'` (integers), `'single'` (single-precision floating point numbers), or `'double'` (double-precision floating point numbers).
+`X = rand2(a,b,[m,n],type)` returns an `m`-by-`n` matrix `X` of random numbers of data type `type`. Options for `type` are `'int'` (integers), `'single'` (single-precision floating point numbers), or `'double'` (double-precision floating point numbers).
 
 
 
