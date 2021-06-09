@@ -7,8 +7,8 @@ Generates a matrix of random numbers between specified lower and upper bounds.
 
 `X = rand2(a,b)`\
 `X = rand2(a,b,[],type)`\
-`X = rand2(a,b,[m,n])`\
-`X = rand2(a,b,[m,n],type)`
+`X = rand2(a,b,[n1,...,nn])`\
+`X = rand2(a,b,[n1,...,nn],type)`
 
 
 ## Description
