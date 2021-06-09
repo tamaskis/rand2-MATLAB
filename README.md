@@ -1,6 +1,6 @@
 # `rand2` [![View Random Number Generator in a Range (rand2) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/85423-random-number-generator-in-a-range-rand2)
 
-Generates a matrix of random numbers between specified lower and upper bounds.
+Generates an n-dimensional matrix of random numbers between upper and lower bounds. Data type specification (integer, single, double) is available.
 
 
 ## Syntax
