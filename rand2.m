@@ -13,8 +13,7 @@
 % MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85423-random-number-generator-in-a-range-rand2
 % GitHub: https://github.com/tamaskis/rand2-MATLAB
 %
-% See EXAMPLES.mlx for examples and "DOCUMENTATION.pdf" for additional 
-% documentation. Both of these files are included with the download.
+% See EXAMPLES.mlx (included with download) for examples.
 %
 % Copyright © 2021 Tamas Kis
 % Last Update: 2021-06-08
@@ -26,9 +25,9 @@
 % -------
 %   a       - (1×1) lower bound
 %   b       - (1×1) upper bound
-%   [m,n]   - (1×2) (OPTIONAL) m = number of rows, n = number of columns
+%   [m,n]   - (OPTIONAL) (1×2) m = number of rows, n = number of columns
 %               --> defaults to [1,1]
-%   type    - (char) (OPTIONAL) data type to return, three options:
+%   type    - (OPTIONAL) (char) data type to return, three options:
 %               --> 'int' - integer
 %               --> 'single' - single-precision floating-point numbers
 %               --> 'double' - double-precision floating-point numbers
