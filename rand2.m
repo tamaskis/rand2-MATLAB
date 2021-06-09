@@ -5,37 +5,46 @@
 %
 %   X = rand2(a,b)
 %   X = rand2(a,b,[],type)
-%   X = rand2(a,b,[m,n])
-%   X = rand2(a,b,[m,n],type)
+%   X = rand2(a,b,[n1,...,nn])
+%   X = rand2(a,b,[n1,...,nn],type)
 %
 % See also rand, randi
 %
+% Copyright © 2021 Tamas Kis
+% Last Update: 2021-06-09
+%
+%--------------------------------------------------------------------------
+
 % MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85423-random-number-generator-in-a-range-rand2
 % GitHub: https://github.com/tamaskis/rand2-MATLAB
 %
 % See EXAMPLES.mlx (included with download) for examples.
-%
-% Copyright © 2021 Tamas Kis
-% Last Update: 2021-06-08
 %
 %--------------------------------------------------------------------------
 %
 % -------
 % INPUTS:
 % -------
-%   a       - (1×1) lower bound
-%   b       - (1×1) upper bound
-%   [m,n]   - (OPTIONAL) (1×2) m = number of rows, n = number of columns
-%               --> defaults to [1,1]
-%   type    - (OPTIONAL) (char) data type to return, three options:
-%               --> 'int' - integer
-%               --> 'single' - single-precision floating-point numbers
-%               --> 'double' - double-precision floating-point numbers
+%   a               - (1×1) lower bound
+%   b               - (1×1) upper bound
+%   [n1,...,nn]     - (OPTIONAL) (1×N) matrix size
+%                       --> defaults to [1,1]
+%                       --> matrix can be n-dimensional
+%   type            - (OPTIONAL) (char) data type to return, three options:
+%                       --> 'int' - integer
+%                       --> 'single' - single-precision floating-point #
+%                       --> 'double' - double-precision floating-point #
 %
 % --------
 % OUTPUTS:
 % --------
-%   X       - (1×1 or m×n) matrix of random numbers between a and b
+%   X               - (1×1 or n1×n2×...×nn) matrix of random numbers 
+%                     between a and b
+%
+% -----
+% NOTE:
+% -----
+%   --> N = length of [n1,...,nn] input
 %
 %==========================================================================
 function X = rand2(a,b,matrix_size,type)
@@ -66,7 +75,7 @@ function X = rand2(a,b,matrix_size,type)
     % returns matrix of random floating-point numbers (either single or
     % double precision, as specified by "typename") between a and b
     else
-        X = a+(b-a)*rand(matrix_size(1),matrix_size(2),type);
+        X = a+(b-a)*rand(matrix_size,type);
         
     end
 
