@@ -8,11 +8,11 @@
 %   X = rand2(a,b,[n1,...,nn])
 %   X = rand2(a,b,[n1,...,nn],type)
 %
-% See also rand, randi
+% See also rand, randi.
 %
 % Copyright © 2021 Tamas Kis
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-06-28
+% Last Update: 2021-07-05
 %
 %--------------------------------------------------------------------------
 %
@@ -23,9 +23,9 @@
 %
 %--------------------------------------------------------------------------
 %
-% -------
-% INPUTS:
-% -------
+% ------
+% INPUT:
+% ------
 %   a               - (1×1) lower bound
 %   b               - (1×1) upper bound
 %   [n1,...,nn]     - (OPTIONAL) (1×N) matrix size
@@ -36,9 +36,9 @@
 %                       --> 'single' - single-precision floating-point #
 %                       --> 'double' - double-precision floating-point #
 %
-% --------
-% OUTPUTS:
-% --------
+% -------
+% OUTPUT:
+% -------
 %   X               - (1×1 or n1×n2×...×nn) matrix of random numbers 
 %                     between a and b
 %
