@@ -12,7 +12,7 @@
 %
 % Copyright © 2021 Tamas Kis
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-05
+% Last Update: 2021-07-09
 %
 %--------------------------------------------------------------------------
 %
@@ -64,13 +64,13 @@ function X = rand2(a,b,matrix_size,type)
     end
     
     % rounds lower and upper bounds if integer data type specified
-    if strcmp(type,'int')
+    if strcmpi(type,'int')
         a = ceil(a);
         b = floor(b);
     end
 
     % returns matrix of random integers between a and b
-    if strcmp(type,'int')
+    if strcmpi(type,'int')
         X = randi([a,b],matrix_size);
         
     % returns matrix of random floating-point numbers (either single or
