@@ -11,15 +11,9 @@
 % See also rand, randi.
 %
 % Copyright © 2021 Tamas Kis
+% Last Update: 2021-07-26
+% Website: tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-09
-%
-%--------------------------------------------------------------------------
-%
-% MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85423-random-number-generator-in-a-range-rand2
-% GitHub: https://github.com/tamaskis/rand2-MATLAB
-%
-% See EXAMPLES.mlx (included with download) for examples.
 %
 %--------------------------------------------------------------------------
 %
