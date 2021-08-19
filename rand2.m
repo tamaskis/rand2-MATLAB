@@ -11,7 +11,7 @@
 % See also rand, randi.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-07-26
+% Last Update: 2021-08-18
 % Website: tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -20,9 +20,9 @@
 % ------
 % INPUT:
 % ------
-%   a               - (1×1) lower bound
-%   b               - (1×1) upper bound
-%   [n1,...,nn]     - (OPTIONAL) (1×N) matrix size
+%   a               - (1×1 double) lower bound
+%   b               - (1×1 double) upper bound
+%   [n1,...,nn]     - (OPTIONAL) (1×N double) matrix size
 %                       --> defaults to [1,1]
 %                       --> matrix can be n-dimensional
 %   type            - (OPTIONAL) (char) data type to return, three options:
@@ -33,7 +33,7 @@
 % -------
 % OUTPUT:
 % -------
-%   X               - (1×1 or n1×n2×...×nn) matrix of random numbers 
+%   X               - (1×1 or n1×n2×...×nn double) matrix of random numbers 
 %                     between a and b
 %
 % -----
