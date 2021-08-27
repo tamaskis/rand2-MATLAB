@@ -11,8 +11,8 @@
 % See also rand, randi.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-08-18
-% Website: tamaskis.github.io
+% Last Update: 2021-08-27
+% Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
 %--------------------------------------------------------------------------
