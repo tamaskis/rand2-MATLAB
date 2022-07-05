@@ -11,7 +11,7 @@
 % See also rand, randi.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-08-27
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -62,7 +62,7 @@ function X = rand2(a,b,matrix_size,type)
         a = ceil(a);
         b = floor(b);
     end
-
+    
     % returns matrix of random integers between a and b
     if strcmpi(type,'int')
         X = randi([a,b],matrix_size);
@@ -73,5 +73,5 @@ function X = rand2(a,b,matrix_size,type)
         X = a+(b-a)*rand(matrix_size,type);
         
     end
-
+    
 end
