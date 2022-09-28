@@ -11,7 +11,7 @@
 % See also rand, randi.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2022-07-05
+% Last Update: 2022-09-27
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -23,7 +23,7 @@
 %   a               - (1×1 double) lower bound
 %   b               - (1×1 double) upper bound
 %   [n1,...,nn]     - (OPTIONAL) (1×N double) matrix size
-%                       --> defaults to [1,1]
+%                       --> defaults to [1,1] (specifies 1×1 matrix)
 %                       --> matrix can be n-dimensional
 %   type            - (OPTIONAL) (char) data type to return, three options:
 %                       --> 'int' - integer
@@ -44,15 +44,12 @@
 %==========================================================================
 function X = rand2(a,b,matrix_size,type)
     
-    % sets default matrix size to 1-by-1 if matrix_size is not input (i.e.
-    % rand2 returns a single number by default)
+    % default matrixs size to 1×1 if matrix_size is not input
     if nargin < 3 || isempty(matrix_size)
         matrix_size = [1,1];
     end
     
-    % sets datatype to double (default) if there less than 4 input
-    % arguments (because in this case, we logically know that typename is
-    % not specified)
+    % defaults datatype to double if not input
     if nargin < 4
         type = 'double';
     end
